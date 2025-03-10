@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Caixa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Sistema de Caixa</h1>
+        <a href="/login"></a>
+        <div class="container-geral">
+            <!-- Seção Registrar Venda -->
+            <div class="container">
+                <h2>Registrar Venda</h2>
+                <form id="venda-form">
+                    <label for="cliente">Nome do Cliente:</label>
+                    <input type="text" id="cliente" name="cliente" required>
+    
+                    <label for="produto">Produto:</label>
+                    <select id="produto" name="produto"></select>
+    
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" required>
+    
+                    <button type="submit">Registrar Venda</button>
+                </form>
+            </div>
+    
+            <!-- Seção Estoque Atual -->
+            <div class="tabela-estoque">
+                <h2>Estoque Atual</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody id="estoque-lista">
+                        <!-- Produtos serão carregados aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <script src="scripts.js"></script>
+    
+    
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007BFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Garante que a tela ocupe todo o espaço */
+}
+
+        
+    .container-geral {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos */
+    align-items: flex-start;
+    gap: 20px; /* Adiciona espaço entre os blocos */
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Define largura */
+}
+
+.tabela-estoque {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Define largura */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+
+}
+
+h1 {
+    background-color: #007BFF;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+
+
+    </style>
+
+</body>
+</html>

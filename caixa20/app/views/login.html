@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sistema de Caixa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- <img src="caixa_r.png" alt="Logo do Sistema de Caixa" class="logo"> -->
+      
+
+        <img src="logo.png" alt="logo da caixa" class="fodase">
+
+        <form id="loginForm" onsubmit="return login(event)">
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p id="mensagem"></p>
+        <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+
+</body>
+</html>
